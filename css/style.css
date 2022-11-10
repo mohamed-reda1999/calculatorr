@@ -1,0 +1,210 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    min-height: 600px;
+}
+
+.dark
+{
+
+    background-color: rgba(14, 13, 13, 0.979);
+
+}
+
+.calculator
+{
+    position: relative;
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba( 0 , 0 , 0 , 0.1),
+     -15px -15px 20px #fffb;
+}
+.dark .calculator
+{
+
+    background-color: 33393e;
+    box-shadow: 5px 5px 10px rgba( 0 , 0 , 0 , 0.25),
+     -5px -5px 10px rgba(255 , 255 , 255 , 0.1 );
+     color: gray;
+
+
+
+}
+
+.calculator .buttons
+{
+
+    position: relative;
+
+    display: grid;
+
+}
+
+.calculator .buttons #value
+{
+
+    position: relative;
+    grid-column: span  4 ;
+    user-select: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    text-align: end;
+    color: blue;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+    inset -5px -5px 20px #fff  ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    font-size: 40px;
+    font-weight: 500;
+ 
+}
+
+.dark .calculator .buttons #value
+{
+
+    color: #edf1f4;
+    background-color: 33393e;
+    box-shadow: inset 5px 5px 10px rgba( 0 , 0 , 0 , 0.25),
+    inset -5px -5px 10px rgba(255 , 255 , 255 , 0.1 );
+
+}
+
+.calculator .buttons span {
+
+    position: relative;
+    display: flex;
+    padding: 10px;
+    box-shadow:  5px 5px 10px rgba(0 , 0 , 0 , 0.1 ),
+     -5px -5px 20px #fff  ;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    min-width: 20px;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #edf1f4;
+    box-shadow:  5px 5px 10px rgba(0 , 0 , 0 , 0.1 ),
+     -5px -5px 20px #fff  ;
+     font-size: 20px;
+}
+
+.calculator .buttons span:active
+{
+    box-shadow:  5px 5px 10px rgba(0 , 0 , 0 , 0.1 ),
+    -5px -5px 20px #fff  ;
+    color: red;
+}
+.calculator .buttons span#clear
+{
+
+    grid-column: span 2;
+    background: red;
+    color: #edf1f4;
+    border: solid 2px #edf1f4;
+
+}
+.calculator .buttons span#plus
+{
+
+    grid-row: span 2;
+    background: rgb(5, 238, 17);
+    color: #edf1f4;
+    border: solid 2px #edf1f4;
+
+}
+.calculator .buttons span#equal
+{
+
+    grid-row: span 2;
+    background: rgb(28, 5, 238);
+    color: #edf1f4;
+    border: solid 2px #edf1f4;
+
+}
+.calculator .buttons span#clear:active,
+.calculator .buttons span#plus:active,
+.calculator .buttons span#equal:active
+{
+
+    box-shadow:  5px 5px 10px rgba(0 , 0 , 0 , 0.1 ),
+    -5px -5px 10px #fff, 
+    inset 5px 5px 10px rgba(0,0,0,0.1)  ;
+ 
+
+}
+.dark .calculator .buttons span 
+{
+
+    color: #edf1f4;
+    border: solid 2px #333;
+    background-color: black;
+    box-shadow:  5px 5px 10px rgba( 0 , 0 , 0 , 0.25),
+     -5px -5px 10px rgba(255 , 255 , 255 , 0.1 );
+}
+.dark .calculator .buttons span:active
+{
+    box-shadow: inset 5px 5px 10px rgba( 0 , 0 , 0 , 0.25),
+    inset -5px -5px 10px rgba(255 , 255 , 255 , 0.1 );
+    color: red;
+    
+}
+.dark .calculator .buttons span#clear,
+.dark .calculator .buttons span#plus,
+.dark .calculator .buttons span#equal
+{
+
+    border: solid 2px #333;
+
+}
+.dark .calculator .buttons span#clear:active,
+.dark .calculator .buttons span#plus:active,
+.dark .calculator .buttons span#equal:active
+{
+
+    box-shadow:  5px 5px 10px rgba(0 , 0 , 0 , 0.25 ) ;
+
+}
+
+
+.darkLight
+{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(24 26 24);
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow:  5px 5px 10px rgba(0 , 0 , 0 , 0.1 ),
+    -5px -5px 10px #fff ;
+    border: rgba(247, 242, 242, 0.877) solid 2px;
+    
+
+}
+.dark .darkLight
+
+{
+    background-color: rgb(234, 241, 234);
+    box-shadow:  5px 5px 10px rgba(0 , 0 , 0 , 0.25 ),
+    -5px -5px 10px rgb(0, 0, 0) ;
+    border: rgba(0, 0, 0, 0.877) solid 2px;
+}
+
+
